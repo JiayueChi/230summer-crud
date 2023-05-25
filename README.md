@@ -1,16 +1,16 @@
 # 230summer-crud
 
 =>
-node-modules directory is not included, so make sure to install npm before running, install the following:
+node-modules directory is not included, so make sure to install npm before running, install the following:<br>
 
-npm install
-npm install mongodb
-npm install express
-npm install cors
+npm install<br>
+npm install mongodb<br>
+npm install express<br>
+npm install cors<br>
 
 
 =>
-then run server on terminal before testing the web(openMe.html):
+then run server on terminal before testing the web(openMe.html): <br>
 
 node server.js
 
