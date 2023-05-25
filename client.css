@@ -1,0 +1,24 @@
+.form-container {
+    display: flex;
+    justify-content: space-around; /* This will ensure equal space around each form */
+    flex-direction: row; /* Aligns the forms side by side */
+}
+
+form {
+    width: 30%; /* Adjust as necessary */
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 0.5rem;
+}
+
+form input,
+form select {
+    margin-bottom: 1rem;
+}
+
+form button[type="submit"] {
+    margin-top: 1rem;
+}

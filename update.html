@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>update</title>
+    <link rel="stylesheet" href="client.css">
+</head>
+<body>
+    <h1>Update</h1>
+    <p>Make sure the first row input is correct.(email & tutorial number)</p>
+    <p>You can copy them from retrieve/read function, then paste them here.</p>
+    <button><a href="create.html">Create</a></button>
+    <button><a href="read.html">Retrieve/Read</a></button>
+    <button><a href="update.html">Update</a></button>
+    <button><a href="delete.html">Delete</a></button>
+
+    <div class="form-container">
+        <form id="updateTutor">
+            <label for="tutorOriginalEmail">Email of tutor:</label>
+            <input type="text" id="tutorOriginalEmail" required>
+            <h2>Insert Update Details</h2>
+            <label for="tutorTitle">Title:</label>
+            <select id="tutorTitle" onchange="handleTitleChange()" required>
+                <option value="">Select a title</option>
+                <option value="Mx">Mx</option>
+                <option value="Ms">Ms</option>
+                <option value="Mr">Mr</option>
+                <option value="Mrs">Mrs</option>
+                <option value="Miss">Miss</option>
+                <option value="other">Other(specify)</option>
+            </select>
+            <input type="text" id="otherTitle" style="display: none;" placeholder="Enter a title">
+            
+            <label for="tutorFirstName">Firstname:</label>
+            <input type="text" id="tutorFirstName" required>
+            <label for="tutorSurname">Surname:</label>
+            <input type="text" id="tutorSurname" required>
+            <label for="tutorPhone">Phone Number:</label>
+            <input type="text" id="tutorPhone" required>
+            <label for="tutorEmail">Emaill:</label>
+            <input type="text" id="tutorEmail" required>
+            <h4>Home Address</h4>
+            <label for="tutorLine1">Address Line 1:</label>
+            <input type="text" id="tutorLine1" required>
+            <label for="tutorLine2">Address Line 2:</label>
+            <input type="text" id="tutorLine2">
+            <label for="tutorTown">Town:</label>
+            <input type="text" id="tutorTown" required>
+            <label for="tutorCounty">County/City:</label>
+            <input type="text" id="tutorCounty" required>
+            <label for="tutorEir">Eircode:</label>
+            <input type="text" id="tutorEir">
+            <button type="submit">Update</button>
+        </form>
+
+        <form id="updateStudent">
+            <label for="studentOriginalEmail">Email of student:</label>
+            <input type="text" id="studentOriginalEmail" required>
+            <h2> Insert Update Details</h2>
+            <label for="studentTitle">Title:</label>
+            <select id="studentTitle" onchange="handleTitleChange()" required>
+                <option value="">Select a title</option>
+                <option value="Mx">Mx</option>
+                <option value="Ms">Ms</option>
+                <option value="Mr">Mr</option>
+                <option value="Mrs">Mrs</option>
+                <option value="Miss">Miss</option>
+                <option value="other">Other(specify)</option>
+            </select>
+            <input type="text" id="otherTitle" style="display: none;" placeholder="Enter a title">
+        
+            <label for="studentFirstName">Firstname:</label>
+            <input type="text" id="studentFirstName" required>
+            <label for="studentSurname">Surname:</label>
+            <input type="text" id="studentSurname" required>
+            <label for="studentPhone">Phone Number:</label>
+            <input type="text" id="studentPhone" required>
+            <label for="studentEmail">Email:</label>
+            <input type="text" id="studentEmail" required>
+            
+            <h4>Home Address</h4>
+            <label for="studentLine1">Address Line 1:</label>
+            <input type="text" id="studentLine1" required>
+            <label for="studentLine2">Address Line 2:</label>
+            <input type="text" id="studentLine2">
+            <label for="studentTown">Town:</label>
+            <input type="text" id="studentTown" required>
+            <label for="studentCounty">County/City:</label>
+            <input type="text" id="studentCounty" required>
+            <label for="studentEir">Eircode:</label>
+            <input type="text" id="studentEir">
+
+            <h4>More Information:</h4>
+            <label for="studentDOB">DOB:</label>
+            <input type="date" id="studentDOB" required>
+        
+            <label for="studentGuardian">Parent/Guardian (Optional if over 18):</label>
+            <input type="text" id="studentGuardian" required>
+        
+            <label for="studentPermission">Permission:</label>
+            <select id="studentPermission" required>
+                <option value="">Select</option>
+                <option value="Y">Yes</option>
+                <option value="N">No</option>
+            </select>
+        
+            <label for="studentGender">Gender:</label>
+            <select id="studentGender" required>
+                <option value="">Select gender</option>
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+                <option value="Other">Other</option>
+            </select>
+        
+            <label for="studentSubject">Subject:</label>
+            <input type="text" id="studentSubject" required>
+            <button type="submit">Update</button>
+        </form>
+
+        <form id="updateTutorial">
+            <label for="tutorialOriginalID">Tutorial number:</label>
+            <input type="text" id="tutorialOriginalID" required>
+            <h2>Insert Update Details</h2>
+            <label for="tutorialDate">Tutorial Date:</label>
+            <input type="date" id="tutorialDate" required>
+
+            <label for="tutorialTime">Tutorial Time:</label>
+            <input type="time" id="tutorialTime" required>
+
+            <label for="tutorialStudents">Students:</label>
+            <input type="text" id="tutorialStudents" placeholder="Enter student names (comma-separated)" required>
+
+            <label for="tutorialTutor">Tutor:</label>
+            <input type="text" id="tutorialTutor" required>
+
+            <label for="tutorialFee">Fee:</label>
+            <input type="text" id="tutorialFee" required>
+
+            <label for="tutorialNumber">Tutorial Number:</label>
+            <input type="text" id="tutorialNumber" required>
+
+            <label for="tutorialAttendance">Tutorial Attendance:</label>
+            <select id="tutorialAttendance" required>
+                <option value="">Select attendance status</option>
+                <option value="Attended">Attended</option>
+                <option value="Cancelled">Cancelled</option>
+                <option value="No Show">No Show</option>
+            </select>
+
+            <label for="tutorialSubject">Tutorial Subject:</label>
+            <select id="tutorialSubject" required>
+                <option value="">Select subject</option>
+                <option value="English">English</option>
+                <option value="Irish">Irish</option>
+                <option value="Maths">Maths</option>
+                <option value="Biology">Biology</option>
+                <option value="Chemistry">Chemistry</option>
+                <option value="Physics">Physics</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Other">Other (specify)</option>
+            </select>
+            <input type="text" id="otherSubject" style="display: none;" placeholder="Enter a subject">
+
+            <label for="tutorialNotes">Tutorial Notes:</label>
+            <textarea id="tutorialNotes" rows="4" required></textarea>
+            <button type="submit">Update</button>
+        </form>
+    </div>
+
+    <script src="update.js"></script>
+
+</body>
+</html>

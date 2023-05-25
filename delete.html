@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>delete</title>
+        <link rel="stylesheet" href="client.css">
+        
+    </head>
+    <body>
+        <h1>Delete</h1>
+        <p>Make sure the first row input is correct.(email & tutorial number)</p>
+        <p>You can copy them from retrieve/read function, then paste them here.</p>
+        <!-- <p>Make sure the email of tutor/student, and the tutorial number is correct. Error may occor if not correct. (You can copy then paste them here fron retrieve/read method)</p> -->
+        <button><a href="create.html">Create</a></button>
+        <button><a href="read.html">Retrieve/Read</a></button>
+        <button><a href="update.html">Update</a></button>
+        <button><a href="delete.html">Delete</a></button>
+
+        <div class="form-container">
+            <form id="deleteTutor">
+                <label for="tutorEmail">Email of tutor:</label>
+                <input type="text" id="tutorEmail">
+                <button type="submit">Delete</button>
+            </form>
+    
+            <form id="deleteStudent">
+                <label for="studentEmail">Email of student:</label>
+                <input type="text" id="studentEmail">
+                <button type="submit">Delete</button>
+            </form>
+
+            <form id="deleteTutorial">
+                <label for="tutorialID">Tutorial number:</label>
+                <input type="text" id="tutorialID">
+                <button type="submit">Delete</button>
+            </form>
+            
+        </div>
+       
+
+        <script src="delete.js"></script>
+    </body>
+</html>
