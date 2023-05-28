@@ -4,7 +4,7 @@ const cors = require('cors'); // Import cors module
 
 
 async function main() {
-  const uri = "mongodb+srv://jiay:20250814@cluster0.ehui8zt.mongodb.net/?retryWrites=true&w=majority";
+  const uri = "mongodb+srv://<username>:<password>@cluster0.ehui8zt.mongodb.net/?retryWrites=true&w=majority";
   const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
   try {
