@@ -8,4 +8,4 @@ npm install cors<br>
 <br>
 
 server.js<br>
-<username>:<password>
+/<username/>:/<password/>
